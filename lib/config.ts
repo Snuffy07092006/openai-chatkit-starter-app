@@ -12,7 +12,7 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
     icon: "circle-question",
   },
 ];
-export const PLACEHOLDER_INPUT = "Ask anything...";
+export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
 
 export const GREETING = "Hvordan kan jeg hjælpe idag?";
 
@@ -29,6 +29,9 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
     },
   },
   radius: "round",
+  typography: {
+    baseSize: 14,
+    fontFamily: 'Lora, serif',
   // Add other theme options here
   // chatkit.studio/playground to explore config options
 });
