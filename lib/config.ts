@@ -11,6 +11,11 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
     prompt: "Hvordan kan jeg leje et lagerrum?",
     icon: "circle-question",
   },
+  {
+    label: "Hvordan kan jeg leje et lagerrum?",
+    prompt: "Hvordan kan jeg leje et lagerrum?",
+    icon: "circle-question",
+  },
 ];
 export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
 
