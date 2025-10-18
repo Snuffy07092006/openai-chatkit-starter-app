@@ -1,4 +1,3 @@
-@@ -1,6 +1,7 @@
 import { StartScreenPrompt } from "@openai/chatkit";
 import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 
