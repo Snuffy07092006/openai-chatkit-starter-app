@@ -16,7 +16,7 @@ export const PLACEHOLDER_INPUT = "Ask anything...";
 
 export const GREETING = "How can I help you today?";
 
-export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
+export const getThemeConfig = (theme: ColorScheme: 'Dark'): ThemeOption => ({
   color: {
     grayscale: {
       hue: 220,
@@ -24,9 +24,24 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       shade: theme === "dark" ? -1 : -4,
     },
     accent: {
-      primary: theme === "dark" ? "#0f3008" : "#0f172a",
+      primary: theme === "dark" ? "#0f3008" : "#303030",
       level: 1,
     },
+    surface: {
+        background: '#0f3008',
+        foreground: '#303030'
+      }
+    },
+    typography: {
+      baseSize: 14,
+      fontFamily: 'Lora, serif',
+      fontSources: [
+        {
+          family: 'Lora',
+          src: 'https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2',
+          weight: 400,
+          style: 'normal',
+          display: 'swap'
   },
   radius: "round",
   // Add other theme options here
