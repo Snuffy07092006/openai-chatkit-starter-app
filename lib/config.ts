@@ -5,16 +5,9 @@ export const WORKFLOW_ID =
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
-export const STARTER_PROMPTS: StartScreenPrompt[] = [
-  {
-    label: "What can you do?",
-    prompt: "What can you do?",
-    icon: "circle-question",
-  },
-];
 export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
 
-export const GREETING = "Hvordan kan jeg hjælpe idag?";
+export const GREETING = "Hvad kan jeg hjælpe med idag?";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
