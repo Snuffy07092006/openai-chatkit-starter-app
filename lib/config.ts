@@ -16,7 +16,7 @@ export const PLACEHOLDER_INPUT = "Ask anything...";
 
 export const GREETING = "How can I help you today?";
 
-export const getThemeConfig = (theme: ColorScheme: 'Dark'): ThemeOption => ({
+export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
     grayscale: {
       hue: 120,
