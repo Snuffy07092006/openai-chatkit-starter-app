@@ -5,13 +5,6 @@ export const WORKFLOW_ID = process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?
 export const WORKFLOW_ID =
   process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
 
-export const CREATE_SESSION_ENDPOINT = "/api/create-session";
-
-@@ -15,3 +16,20 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
-export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
-
-export const GREETING = "Hvad kan jeg hjælpe med idag?";
-
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
  theme: {
     colorScheme: 'dark',
@@ -37,3 +30,20 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
           weight: 400,
           style: 'normal',
           display: 'swap'
+    }
+      // ...and 7 more font sources
+      ]
+    }
+  },
+  composer: {
+    placeholder: 'Stil et spørgsmål',
+    attachments: {
+      enabled: false
+    },
+  },
+  startScreen: {
+    greeting: 'Hvad kan jeg hjælpe med idag?',
+    prompts: [],
+  },
+  // Optional fields not shown: locale, initialThread, threadItemActions, header, onClientTool, entities, widgets
+};
