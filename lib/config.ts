@@ -7,9 +7,9 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: 
-    prompt:
-    icon: 
+    label: "Hvordan kan jeg leje et lagerrum?",
+    prompt: "Hvordan kan jeg leje et lagerrum?",
+    icon: "circle-question",
   },
 ];
 export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
