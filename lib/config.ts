@@ -1,10 +1,20 @@
-import type { ChatKitOptions } from "@openai/chatkit";
+@@ -1,6 +1,7 @@
+import { StartScreenPrompt } from "@openai/chatkit";
+import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 
-const options: ChatKitOptions = {
-  api: {
-    // TODO: configure your ChatKit API integration (URL, auth, uploads).
-  },
-  theme: {
+export const WORKFLOW_ID = process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
+export const WORKFLOW_ID =
+  process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
+
+export const CREATE_SESSION_ENDPOINT = "/api/create-session";
+
+@@ -15,3 +16,20 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
+export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
+
+export const GREETING = "Hvad kan jeg hjælpe med idag?";
+
+export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
+ theme: {
     colorScheme: 'dark',
     radius: 'round',
     density: 'compact',
@@ -28,20 +38,3 @@ const options: ChatKitOptions = {
           weight: 400,
           style: 'normal',
           display: 'swap'
-        }
-      // ...and 7 more font sources
-      ]
-    }
-  },
-  composer: {
-    placeholder: 'Stil et spørgsmål',
-    attachments: {
-      enabled: false
-    },
-  },
-  startScreen: {
-    greeting: 'Hvad kan jeg hjælpe med idag?',
-    prompts: [],
-  },
-  // Optional fields not shown: locale, initialThread, threadItemActions, header, onClientTool, entities, widgets
-};
