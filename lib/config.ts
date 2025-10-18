@@ -5,6 +5,13 @@ export const WORKFLOW_ID =
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
+export const STARTER_PROMPTS: StartScreenPrompt[] = [
+  {
+    label: 
+    prompt:
+    icon: 
+  },
+];
 export const PLACEHOLDER_INPUT = "Stil et spørgsmål";
 
 export const GREETING = "Hvad kan jeg hjælpe med idag?";
