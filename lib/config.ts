@@ -18,14 +18,13 @@ export const GREETING = "Hvad kan jeg hjælpe med idag?";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
-    grayscale: {
-      hue: 120,
-      tint: 8,
-      shade: theme === "dark" ? -3 : -4,
-    },
-    accent: {
-      primary: theme === "dark" ? "#0f3008" : "#303030",
-      level: 1,
+   accent: {
+        primary: '#303030',
+        level: 1
+      },
+      surface: {
+        background: '#0f3008',
+        foreground: '#303030'
     },
   },
   radius: "round",
