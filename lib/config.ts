@@ -29,9 +29,6 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
     },
   },
   radius: "round",
-  typography: {
-    baseSize: 14,
-    fontFamily: 'Lora, serif',
   // Add other theme options here
   // chatkit.studio/playground to explore config options
 });
