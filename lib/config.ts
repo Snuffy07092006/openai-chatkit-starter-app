@@ -43,7 +43,3 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   },
   startScreen: {
     greeting: 'Hvad kan jeg hjælpe med idag?',
-    prompts: [],
-  },
-  // Optional fields not shown: locale, initialThread, threadItemActions, header, onClientTool, entities, widgets
-};
