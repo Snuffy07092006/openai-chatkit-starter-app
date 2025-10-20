@@ -29,12 +29,12 @@ export const GREETING = "Hvad kan jeg hjælpe med idag?";
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
    accent: {
-        primary: '#0f2f09',
+        primary: '#005ec7',
         level: 1
       },
       surface: {
-        background: '#0f2f09',
-        foreground: '#0f2f09'
+        background: '#005ec7',
+        foreground: '#000000'
     },
   },
   radius: "round",
