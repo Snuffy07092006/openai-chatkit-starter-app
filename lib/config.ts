@@ -34,7 +34,7 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       },
       surface: {
         background: '#0f2f09',
-        foreground: '#000000'
+        foreground: '#0f2f09'
     },
   },
   radius: "round",
